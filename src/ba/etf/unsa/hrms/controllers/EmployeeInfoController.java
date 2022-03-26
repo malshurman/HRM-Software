@@ -1,4 +1,4 @@
 package ba.etf.unsa.hrms.controllers;
 
-public class Controller {
+public class EmployeeInfoController {
 }
