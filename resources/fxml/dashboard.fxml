@@ -4,7 +4,8 @@
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1">
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" xmlns="http://javafx.com/javafx/15" xmlns:fx="http://javafx.com/fxml/1">
    <top>
       <VBox BorderPane.alignment="CENTER">
          <children>
@@ -31,16 +32,16 @@
       </VBox>
    </top>
    <center>
-      <SplitPane dividerPositions="0.5" BorderPane.alignment="CENTER">
+      <SplitPane fx:id="splitPlaneMain" dividerPositions="0.5" BorderPane.alignment="CENTER">
          <items>
-            <VBox maxWidth="200.0" minWidth="200.0" prefWidth="200.0">
+            <VBox fx:id="employeeLstVBox" maxWidth="200.0" minWidth="200.0" prefWidth="200.0">
                <children>
-                  <TextField promptText="Search...">
+                  <TextField fx:id="fldSearchEmployee" promptText="Search...">
                      <VBox.margin>
                         <Insets left="5.0" right="5.0" top="5.0" />
                      </VBox.margin>
                   </TextField>
-                  <ListView VBox.vgrow="ALWAYS">
+                  <ListView fx:id="lstViewEmployees" VBox.vgrow="ALWAYS">
                      <VBox.margin>
                         <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
                      </VBox.margin>
@@ -48,9 +49,9 @@
                </children>
             </VBox>
              <TabPane tabClosingPolicy="UNAVAILABLE">
-                 <Tab text="Employee info" />
-                 <Tab text="Job" />
-                 <Tab text="Working hours" />
+                 <Tab fx:id="tabEmployee" text="Employee info" />
+                 <Tab fx:id="tabJob" text="Job" />
+                 <Tab fx:id="tabHours" text="Working hours" />
              </TabPane>
          </items>
       </SplitPane>

@@ -1,5 +1,6 @@
 package ba.etf.unsa.hrms.controllers;
 
+import ba.etf.unsa.hrms.models.Employee;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
@@ -29,7 +30,9 @@ public class LoginController {
             loader.load();
             Stage stage = (Stage) btnLogin.getScene().getWindow();
             stage.close();
-            stage.setScene(new Scene(loader.getRoot(), 600, 400));
+            stage.setScene(new Scene(loader.getRoot(), 800, 400));
+            stage.setMinHeight(425);
+            stage.setMinWidth(800);
             stage.show();
         } catch (IOException e) {
             e.printStackTrace();

@@ -1,0 +1,17 @@
+.validTextField {
+    -fx-control-inner-background: greenyellow;
+}
+.invalidTextField {
+    -fx-control-inner-background: lightpink;
+}
+.validForm {
+    -fx-border-color: darkred;
+    -fx-border-width: 2;
+}
+.validForm {
+    -fx-border-color: darkgreen;
+    -fx-border-width: 2;
+}
+.defaultImage {
+    -fx-background-image: url("/img/default_avatar.png"); -fx-background-size: 160;
+}

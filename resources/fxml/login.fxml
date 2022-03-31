@@ -5,7 +5,7 @@
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.text.*?>
 
-<GridPane alignment="CENTER" style="-fx-background-color: #b2bec3;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ba.etf.unsa.hrms.controllers.LoginController">
+<GridPane alignment="CENTER" style="-fx-background-color: #b2bec3;" xmlns="http://javafx.com/javafx/15" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ba.etf.unsa.hrms.controllers.LoginController">
    <columnConstraints>
       <ColumnConstraints halignment="CENTER" hgrow="NEVER" minWidth="10.0" />
    </columnConstraints>

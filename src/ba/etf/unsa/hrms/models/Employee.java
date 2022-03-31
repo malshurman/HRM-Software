@@ -8,6 +8,7 @@ public class Employee {
     private int jobID;
     private int managerID;
     private int departmentID;
+    private boolean isAdmin;
     private String firstName;
     private String lastName;
     private String email;
